@@ -1,0 +1,86 @@
+.skills{
+    padding: 75px 0 60px 0;
+    &__title{
+        text-align: center;
+        @include before_circle;
+        position: relative;
+        &:before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__divider{
+        @include divider;
+        margin: 10px auto 0 auto;
+    }
+    &__technologies{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(280px, auto));
+        gap: 13px
+    }
+    &__item{
+        padding: 30px 30px 26px 30px;
+        border: 2px solid #000000;
+        display: grid;
+        grid-template-rows: 68px 24px 98px;
+        justify-content: center;
+        gap: 13px;
+        &-descr{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-img{
+            height: 68px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__statistics{
+        margin-top: 125px;
+        &-wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 73px);
+            gap: 30px 55px;
+        }
+        &-item{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &-subtitle{
+            padding-left: 13px;
+            position: relative;
+            @include before_circle;
+            &::before{
+                top: -9px;
+            }
+        }
+        &-percent{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-line {
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            span {
+                display: block;
+                height: 100%;
+                background-color: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+    
+}

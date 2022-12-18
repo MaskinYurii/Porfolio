@@ -1,0 +1,39 @@
+.subpanel{
+    width: 24px;
+    height: 300px;
+    position: fixed;
+    left: 50px;
+    top: 235px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        transition: 0.4s;
+        transform: rotate(-90deg);
+        &:hover{
+            padding: 10px 0;
+        }
+        &:last-child{
+            &:hover{
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+    &__divider{
+        border: 1px solid #000000;
+        height: 70px;
+        width: 1px;
+    }
+    &__text{
+        width: 24px;
+        height: 110px;
+        span{
+            display: block;
+            width: 110px;
+            height: 24px;
+            transform: rotate(-90deg) translate(-40%, -185%);
+        }
+    }
+}
