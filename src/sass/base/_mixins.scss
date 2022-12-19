@@ -11,9 +11,3 @@
         z-index: -1;
     }
 };
-
-@mixin divider{
-    background-color: $main-color;
-    width: 60px;
-    height: 3px;
-}

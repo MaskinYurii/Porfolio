@@ -23,9 +23,6 @@
         @include before_circle;
         padding-left: 12px;
     }
-    &__divider{
-        @include divider;
-    }
     &__text{
         margin-top: 20px;
         font-weight: 500;

@@ -8,3 +8,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 })
+
+// const counters = document.querySelectorAll('.skills__statistics-percent'),
+//       lines = document.querySelectorAll('.skills__statistics-line span');
+
+// counters.forEach( (item, i) => {
+//     lines[i].style.width = item.innerHTML;
+// });
