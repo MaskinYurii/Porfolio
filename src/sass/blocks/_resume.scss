@@ -27,6 +27,14 @@
             padding-left: 22px;
             position: relative;
         }
+        &-subtitle{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+        }
+        &-location{
+            font-size: 12px;
+        }
         ul{
             list-style-type: none;
             li{

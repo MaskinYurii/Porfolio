@@ -1,9 +1,9 @@
 .promo{
     position: relative;
     height: 100vh;
-    z-index: 0;
+    z-index: 10;
     padding-top: 210px;
-    background: url('../img/main_bg.jpg') no-repeat 70%/cover;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     &__subtitle{
         position: relative;
         padding-left: 10px;

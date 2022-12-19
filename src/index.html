@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <!-- Primary Meta Tags -->
+    <title>Maskin Yuriy - Portfolio</title>
+    <meta name="title" content="Maskin Yuriy - Portfolio">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Maskin Yuriy - Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Maskin Yuriy - Portfolio">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
     <aside class="subpanel">
-        <a href="https://www.instagram.com/_massskin_/" target="_blank" class="subpanel__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
-        <a href="#" target="_blank" class="subpanel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="subpanel__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
+        <a href="https://www.instagram.com/_massskin_/" target="_blank" class="subpanel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
         <a href="https://github.com/MaskinYurii" target="_blank" class="subpanel__link"><img src="icons/social/github.svg" alt="github"></a>
         <div class="subpanel__divider"></div>
         <div class="subpanel__text"><span>Social media</span></div>
@@ -32,7 +67,7 @@
                 <li class="menu__list-item"><a href="#skills">My skills</a></li>
                 <li class="menu__list-item"><a href="#works">My works</a></li>
                 <li class="menu__list-item"><a href="#price">Price-list</a></li>
-                <li class="menu__list-item"><a href="#">Contacts</a></li>
+                <li class="menu__list-item"><a href="#contacts">Contacts</a></li>
             </ul>
             <div class="menu__social">
                 <div class="menu__social-item">
@@ -59,7 +94,7 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -69,8 +104,8 @@
             <div class="title title_fz16 promo__subtitle">My name is Yuriy Maskin</div>
             <h1 class="title title_fz48 promo__title">I am a web developer from Ukraine</h1>
             <div class="promo__btns">
-                <a href="#" class="btn">Portfolio</a>
-                <a href="#" class="promo__btn">About me</a>
+                <a href="#works" class="btn">Portfolio</a>
+                <a href="#about" class="promo__btn">About me</a>
             </div>
         </div>
     </section>
@@ -79,32 +114,37 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__img">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source srcset="img/main_photo.webp" alt="photo">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
+                    
                 </div>
-                <div class="about__top">
+                <div class="about__descr">
                     <h2 class="title title_fz16 about__title">About me</h2>
                     <div class="title title_fz36">My name is Yuriy</div>
                     <div class="divider"></div>
                     <p class="about__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
-                </div>
-                <div class="about__items">
-                    <div class="about__item">
-                        <div class="about__item-icon"><img src="icons/about_me/web_development.svg" alt="web_development"></div>
-                        <div class="about__item-content">
-                            <div class="title title_fz14">Web-development</div>
-                            <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+                    <div class="about__items">
+                        <div class="about__item">
+                            <div class="about__item-icon"><img src="icons/about_me/web_development.svg" alt="web_development"></div>
+                            <div class="about__item-content">
+                                <div class="title title_fz14">Web-development</div>
+                                <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__item-icon"><img src="icons/about_me/mobile_dev.svg" alt="mobile_dev"></div>
+                            <div class="about__item-content">
+                                <div class="title title_fz14">Application Development</div>
+                                <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="about__item">
-                        <div class="about__item-icon"><img src="icons/about_me/mobile_dev.svg" alt="mobile_dev"></div>
-                        <div class="about__item-content">
-                            <div class="title title_fz14">Application Development</div>
-                            <div class="about__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </div>
-                    </div>
-                </div>
+                </div>  
             </div>
         </div>
     </section>
@@ -280,6 +320,75 @@
         </div>
     </section>
 
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__column">
+                    <div class="contacts__img">
+                        <picture>
+                            <source srcset="img/main_photo.webp" alt="photo">
+                            <img src="img/main_photo.jpg" alt="photo">
+                        </picture>
+                    </div>
+                </div>
+                <div class="contacts__column">
+                    <h2 class="title title_fz16 contacts__title">Contacts</h2>
+                    <div class="title title_fz36">Get into contact with me</div>
+                    <div class="divider"></div>
+                    <div class="title title_fz14 contacts__text">In any way convenient for you:</div>
+                    <div class="contacts__social">
+                        <a href="https://www.facebook.com/" class="contacts__link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0698 0L2.9292 0C1.3139 0 -0.000488281 1.31439 -0.000488281 2.92969L-0.000488281 17.0703C-0.000488281 18.6856 1.3139 20 2.9292 20L8.82764 20L8.82764 12.9297L6.48389 12.9297L6.48389 9.41406L8.82764 9.41406L8.82764 7.03125C8.82764 5.09262 10.4046 3.51563 12.3433 3.51563L15.8979 3.51563L15.8979 7.03125L12.3433 7.03125L12.3433 9.41406L15.8979 9.41406L15.312 12.9297L12.3433 12.9297L12.3433 20L17.0698 20C18.6851 20 19.9995 18.6856 19.9995 17.0703L19.9995 2.92969C19.9995 1.31439 18.6851 0 17.0698 0Z" fill="black"/>
+                            </svg>  
+                        </a>
+                        <a href="https://t.me/umassskin" class="contacts__link" target="_blank">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/_massskin_/" class="contacts__link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7495 0L6.24951 0C2.79826 0 -0.000488281 2.79875 -0.000488281 6.25L-0.000488281 13.75C-0.000488281 17.2013 2.79826 20 6.24951 20L13.7495 20C17.2008 20 19.9995 17.2013 19.9995 13.75L19.9995 6.25C19.9995 2.79875 17.2008 0 13.7495 0ZM18.1245 13.75C18.1245 16.1625 16.162 18.125 13.7495 18.125L6.24951 18.125C3.83701 18.125 1.87451 16.1625 1.87451 13.75L1.87451 6.25C1.87451 3.8375 3.83701 1.875 6.24951 1.875L13.7495 1.875C16.162 1.875 18.1245 3.8375 18.1245 6.25L18.1245 13.75Z" fill="black"/>
+                                <path d="M9.99951 5C7.23826 5 4.99951 7.23875 4.99951 10C4.99951 12.7613 7.23826 15 9.99951 15C12.7608 15 14.9995 12.7613 14.9995 10C14.9995 7.23875 12.7608 5 9.99951 5ZM9.99951 13.125C8.27701 13.125 6.87451 11.7225 6.87451 10C6.87451 8.27625 8.27701 6.875 9.99951 6.875C11.722 6.875 13.1245 8.27625 13.1245 10C13.1245 11.7225 11.722 13.125 9.99951 13.125Z" fill="black"/>
+                                <path d="M15.3745 5.29123C15.7425 5.29123 16.0408 4.99295 16.0408 4.62499C16.0408 4.25703 15.7425 3.95874 15.3745 3.95874C15.0065 3.95874 14.7083 4.25703 14.7083 4.62499C14.7083 4.99295 15.0065 5.29123 15.3745 5.29123Z" fill="black"/>
+                            </svg>
+                                
+                        </a>
+                    </div>
+                    <div class="title title_fz14 contacts__text">Or leave your details and I will write to you:</div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required id="name" type="text">
+                            <label for="#name">Your name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required id="email" type="mail">
+                            <label for="#email">Your email</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea id="text"></textarea>
+                            <label for="#text">Your message</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Send a message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I agree with <a href="/policy.html" target="_blank">the privacy policy</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#promo" class="arrow-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM377 271c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-87-87-87 87c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 167c9.4-9.4 24.6-9.4 33.9 0L377 271z"/></svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
